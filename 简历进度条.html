@@ -1,80 +1,200 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title></title>
-
-	<style type="text/css">
-	*{margin:0; padding: 0; background-color: }
-	li{
-		height:5px;
-		width: 278px;
-		margin-bottom: 70px;
-		border-top: 1px solid #111;
-		border-left: 1px solid #111;
-		border-right: 1px solid #333;
-		border-bottom: 1px solid #333;
-		border-radius: 3px;
-	}
-	.content{
-		width:278px;
-		margin:0;
-		position:relative;
-		float:left;
-		font-size:12px;
-		line-height:2em;
-		padding:30px 0 30px;
-	}
-	.content li em{
-		top:-30px;
-		position: relative;
-	}
-
-	.expand{
-		height: 1px;
-		background: #0033FF;
-		margin:2px 0;
-		position: absolute;
-		box-shadow: 0px 0px 10px 2px rgba(0,198,255,0.4);
-	}
-	.container{
-		margin-top: 50px;
-	}
-	.skills{
-		list-style: none;
-	}
-	.col{width:280px;}
-	.asp{width: 90%; -moz-animation:asp 2s ease-out; -webkit-animation:asp 2s ease-out;}
-	.java{width: 70%; -moz-animation:java 2s ease-out; -webkit-animation:java 2s ease-out;}
-	.html5 {width:75%; -moz-animation:html  2s ease-out; -webkit-animation: html 2s ease-out;}
-	.css {width: 60%; -moz-animation:css 2s ease-out; -webkit-animation:css 2s ease-out;}
-	.js {width: 50%; -moz-animation:js 2s ease-out;-webkit-animation: js 2s ease-out;}
-	/*Firefox*/
-		@-moz-keyframes asp  {0% {width: 0px;} 100% {width: 90%;}}
-		@-moz-keyframes java {0% {width: 0px;} 100% {width: 70%;}}
-		@-moz-keyframes html {0% {width: 0px;} 100% {width: 75%;}}
-		@-moz-keyframes css  {0% {width: 0px}; 100% {width: 60%;}}
-		@-moz-keyframes js   {0% {width: 0px;} 100% {width: 50%;}}
-	/*Safari and Chromes*/
-		@-webkit-keyframes asp  {0% {width: 0px;} 100% {width: 90%;}}
-		@-webkit-keyframes java {0% {width: 0px;} 100% {width: 70%;}}
-		@-webkit-keyframes html {0% {width: 0px;} 100% {width: 75%;}}
-		@-webkit-keyframes css  {0% {width: 0px;} 100% {width: 60%;}}
-		@-webkit-keyframes js   {0% {width: 0px;} 100% {width: 50%;}}
-	</style>
+  <title></title>
+  <style type="text/css">
+  * {
+    margin: 0;
+    padding: 0;
+    background-color:
+  }
+  
+  li {
+    height: 5px;
+    width: 278px;
+    margin-bottom: 70px;
+    border-top: 1px solid #111;
+    border-left: 1px solid #111;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-radius: 3px;
+  }
+  
+  .content {
+    width: 278px;
+    margin: 0;
+    position: relative;
+    float: left;
+    font-size: 12px;
+    line-height: 2em;
+    padding: 30px 0 30px;
+  }
+  
+  .content li em {
+    top: -30px;
+    position: relative;
+  }
+  
+  .expand {
+    height: 1px;
+    background: #0033FF;
+    margin: 2px 0;
+    position: absolute;
+    box-shadow: 0px 0px 10px 2px rgba(0, 198, 255, 0.4);
+  }
+  
+  .container {
+    margin-top: 50px;
+  }
+  
+  .skills {
+    list-style: none;
+  }
+  
+  .col {
+    width: 280px;
+  }
+  
+  .asp {
+    width: 90%;
+    -moz-animation: asp 2s ease-out;
+    -webkit-animation: asp 2s ease-out;
+  }
+  
+  .java {
+    width: 70%;
+    -moz-animation: java 2s ease-out;
+    -webkit-animation: java 2s ease-out;
+  }
+  
+  .html5 {
+    width: 75%;
+    -moz-animation: html 2s ease-out;
+    -webkit-animation: html 2s ease-out;
+  }
+  
+  .css {
+    width: 60%;
+    -moz-animation: css 2s ease-out;
+    -webkit-animation: css 2s ease-out;
+  }
+  
+  .js {
+    width: 50%;
+    -moz-animation: js 2s ease-out;
+    -webkit-animation: js 2s ease-out;
+  }
+  /*Firefox*/
+  
+  @-moz-keyframes asp {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 90%;
+    }
+  }
+  
+  @-moz-keyframes java {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 70%;
+    }
+  }
+  
+  @-moz-keyframes html {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 75%;
+    }
+  }
+  
+  @-moz-keyframes css {
+    0% {
+      width: 0px
+    }
+    ;
+    100% {
+      width: 60%;
+    }
+  }
+  
+  @-moz-keyframes js {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 50%;
+    }
+  }
+  /*Safari and Chromes*/
+  
+  @-webkit-keyframes asp {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 90%;
+    }
+  }
+  
+  @-webkit-keyframes java {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 70%;
+    }
+  }
+  
+  @-webkit-keyframes html {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 75%;
+    }
+  }
+  
+  @-webkit-keyframes css {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 60%;
+    }
+  }
+  
+  @-webkit-keyframes js {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 50%;
+    }
+  }
+  </style>
 </head>
+
 <body>
-<div class="container">
-	<div class="content">
-		<div class="col">
-			<ul class="skills">
-				<li><span class="expand asp"></span><em>ASP.NET</em></li>
-				<li><span class="expand java"></span><em>Java</em></li>
-				<li><span class="expand html5"></span><em>HTML5</em></li>
-				<li><span class="expand css"></span><em>CSS</em></li>
-				<li><span class="expand js"></span><em>Javascript</em></li>
-			</ul>
-		</div>
-	</div>
-</div>
+  <div class="container">
+    <div class="content">
+      <div class="col">
+        <ul class="skills">
+          <li><span class="expand asp"></span><em>ASP.NET</em></li>
+          <li><span class="expand java"></span><em>Java</em></li>
+          <li><span class="expand html5"></span><em>HTML5</em></li>
+          <li><span class="expand css"></span><em>CSS</em></li>
+          <li><span class="expand js"></span><em>Javascript</em></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
